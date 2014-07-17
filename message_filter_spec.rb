@@ -1,6 +1,6 @@
 require_relative 'message_filter'
 
-describe MessageFilter do
+describe MessageFilter, 'with argument "foo"' do
   before do
     @filter = MessageFilter.new('foo')
   end
