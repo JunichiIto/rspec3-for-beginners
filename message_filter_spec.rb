@@ -5,11 +5,11 @@ describe MessageFilter do
     it { is_expected.to be_detect('hello from foo') }
     it { is_expected.not_to be_detect('hello, world!') }
   end
-  describe 'with argument "foo"' do
+  context 'with argument "foo"' do
     subject { MessageFilter.new('foo') }
     it_behaves_like 'MessageFilter with argument "foo"'
   end
-  describe 'with argument "foo","bar"' do
+  context 'with argument "foo","bar"' do
     subject { MessageFilter.new('foo', 'bar') }
     it { is_expected.to be_detect('hello from bar') }
     it_behaves_like 'MessageFilter with argument "foo"'
