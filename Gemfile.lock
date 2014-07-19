@@ -6,6 +6,8 @@ GEM
       rspec-core (~> 3.0.0)
       rspec-expectations (~> 3.0.0)
       rspec-mocks (~> 3.0.0)
+    rspec-collection_matchers (1.0.0)
+      rspec-expectations (>= 2.99.0.beta1)
     rspec-core (3.0.2)
       rspec-support (~> 3.0.0)
     rspec-expectations (3.0.2)
@@ -23,4 +25,5 @@ PLATFORMS
 
 DEPENDENCIES
   rspec (= 3.0.0)
+  rspec-collection_matchers (= 1.0.0)
   rspec-its (= 1.0.1)
